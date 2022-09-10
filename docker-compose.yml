@@ -1,0 +1,30 @@
+version: '3'
+services:
+  redis:
+    image: redis/redis-stack
+    container_name: redis
+    networks:
+      - redis-poc-backend
+    ports:
+      - 6379:6379
+      - 8001:8001
+  redis-api-1:
+    build: .
+    container_name: redis-api-1
+    environment:
+      - REDIS_HOSTNAME=redis
+    networks:
+      - redis-poc-backend
+    ports:
+      - 8080:8080
+  redis-api-2:
+    build: .
+    container_name: redis-api-2
+    environment:
+      - REDIS_HOSTNAME=redis
+    networks:
+      - redis-poc-backend
+    ports:
+      - 8081:8080
+networks:
+  redis-poc-backend:
