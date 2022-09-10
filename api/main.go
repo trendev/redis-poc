@@ -12,9 +12,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Askia/redis-poc/internal/data"
 	"github.com/gin-gonic/gin"
 	"github.com/go-redis/redis/v8"
+	"github.com/trendev/redis-poc/internal/data"
 )
 
 type App struct {

@@ -1,4 +1,4 @@
-module github.com/Askia/redis-poc
+module github.com/trendev/redis-poc
 
 go 1.19
 

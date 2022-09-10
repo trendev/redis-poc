@@ -7,7 +7,7 @@
 ## :rocket:  Use Rest API
 ### Save 
 ```
-curl -s -vvv -X POST "http://localhost:8080/jsie" -H 'content-type: application/json' -d '{ "value": "hello askia" }' | jq
+curl -s -vvv -X POST "http://localhost:8080/jsie" -H 'content-type: application/json' -d '{ "value": "hello trendev" }' | jq
 ```
 ### Find
 ```

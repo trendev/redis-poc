@@ -7,12 +7,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Askia/redis-poc/internal/data"
 	"github.com/goccy/go-json"
+	"github.com/trendev/redis-poc/internal/data"
 )
 
 func main() {
-	msg := "Hello Askia"
+	msg := "Hello trendev"
 	var wg sync.WaitGroup
 
 	for i := 0; i < 200; i++ {
